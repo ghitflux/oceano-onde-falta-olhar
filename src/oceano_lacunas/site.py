@@ -6,7 +6,7 @@ escolhidas pelo intervalo de confiança, não fixadas à mão.
 
 from __future__ import annotations
 
-from . import dados
+from . import dados, site_extras
 
 
 def _num(valor: float, casas: int, idioma: str) -> str:
@@ -63,6 +63,11 @@ def _conta_simples(gt: dict) -> dict[str, str]:
 
 
 def bloco(r: dict) -> dict:
+    """O bloco completo: textos, gráfico principal e os gráficos adicionais."""
+    return {**bloco_principal(r), "graficos_extras": site_extras.graficos(r)}
+
+
+def bloco_principal(r: dict) -> dict:
     esforco, validacao = r["esforco"], r["validacao"]
     faixas = esforco["por_faixa"]
     unidades = sum(f["unidades"] for f in faixas.values())

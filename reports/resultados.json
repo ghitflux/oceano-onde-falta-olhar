@@ -9392,7 +9392,1347 @@
           }
         }
       ]
-    }
+    },
+    "graficos_extras": [
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "O retorno esperado ordena melhor que ir aonde há menos registros: 0,49 contra 0,35",
+          "en": "Expected return ranks better than going where records are fewest: 0.49 vs 0.35",
+          "es": "El retorno esperado ordena mejor que ir adonde hay menos registros: 0,49 frente a 0,35"
+        },
+        "leitura": {
+          "pt": "Correlação de postos entre cada regra, aplicada só aos dados até 2010, e as espécies novas que apareceram depois, em 283 unidades. A conta de uma linha (singletons por registro) empata com a extrapolação.",
+          "en": "Rank correlation between each rule, applied only to data up to 2010, and the new species recorded afterwards, across 283 units. The one-line rule (singletons per record) ties with the extrapolation.",
+          "es": "Correlación de rangos entre cada regla, aplicada solo a los datos hasta 2010, y las especies nuevas que aparecieron después, en 283 unidades. La cuenta de una línea (singletons por registro) empata con la extrapolación."
+        },
+        "eixo_x": {
+          "pt": "Regra de prioridade",
+          "en": "Priority rule",
+          "es": "Regla de prioridad"
+        },
+        "eixo_y": {
+          "pt": "Correlação de Spearman com o realizado",
+          "en": "Spearman correlation with the outcome",
+          "es": "Correlación de Spearman con lo realizado"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Correlação com o realizado",
+              "en": "Correlation with the outcome",
+              "es": "Correlación con lo realizado"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "Retorno esperado (Chao1)",
+                0.489
+              ],
+              [
+                "Retorno esperado (ACE)",
+                0.488
+              ],
+              [
+                "Singletons por registro",
+                0.493
+              ],
+              [
+                "Menos registros",
+                0.353
+              ],
+              [
+                "Mais espécies registradas",
+                0.013
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "Retorno esperado (Chao1)",
+                "Retorno esperado (ACE)",
+                "Singletons por registro",
+                "Menos registros",
+                "Mais espécies registradas"
+              ],
+              "en": [
+                "Expected return (Chao1)",
+                "Expected return (ACE)",
+                "Singletons per record",
+                "Fewest records",
+                "Most recorded species"
+              ],
+              "es": [
+                "Retorno esperado (Chao1)",
+                "Retorno esperado (ACE)",
+                "Singletons por registro",
+                "Menos registros",
+                "Más especies registradas"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "tipo": "linhas",
+        "titulo": {
+          "pt": "A ordem se aproveita, o tamanho não: apareceu 3,4 vezes o previsto",
+          "en": "The order holds, the size does not: 3.4 times the forecast turned up",
+          "es": "El orden se aprovecha, el tamaño no: apareció 3,4 veces lo previsto"
+        },
+        "leitura": {
+          "pt": "Unidades agrupadas pelo previsto com dados até 2010; cada ponto é a mediana do grupo e a faixa vai do 1º ao 3º quartil do realizado. Só 6% dos realizados caíram no intervalo de 95% da previsão.",
+          "en": "Units grouped by the forecast made with data up to 2010; each point is the group median and the band spans the interquartile range of the outcome. Only 6% of outcomes fell inside the forecast's 95% interval.",
+          "es": "Unidades agrupadas por lo previsto con datos hasta 2010; cada punto es la mediana del grupo y la franja va del 1.º al 3.º cuartil de lo realizado. Solo el 6% de lo realizado cayó en el intervalo del 95% de la previsión."
+        },
+        "eixo_x": {
+          "pt": "Previsto: espécies novas por mil registros",
+          "en": "Forecast: new species per thousand records",
+          "es": "Previsto: especies nuevas por mil registros"
+        },
+        "eixo_y": {
+          "pt": "Realizado: espécies novas em mil registros posteriores",
+          "en": "Outcome: new species in a thousand later records",
+          "es": "Realizado: especies nuevas en mil registros posteriores"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Realizado (mediana do grupo)",
+              "en": "Outcome (group median)",
+              "es": "Realizado (mediana del grupo)"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                0.79,
+                10.32
+              ],
+              [
+                2.44,
+                18.61
+              ],
+              [
+                4.72,
+                17.77
+              ],
+              [
+                7.93,
+                46.99
+              ],
+              [
+                12.81,
+                30.91
+              ],
+              [
+                18.36,
+                60.15
+              ],
+              [
+                38.05,
+                77.55
+              ],
+              [
+                74.2,
+                88.69
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Previsto = realizado",
+              "en": "Forecast = outcome",
+              "es": "Previsto = realizado"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                0.79,
+                0.79
+              ],
+              [
+                2.44,
+                2.44
+              ],
+              [
+                4.72,
+                4.72
+              ],
+              [
+                7.93,
+                7.93
+              ],
+              [
+                12.81,
+                12.81
+              ],
+              [
+                18.36,
+                18.36
+              ],
+              [
+                38.05,
+                38.05
+              ],
+              [
+                74.2,
+                74.2
+              ]
+            ]
+          }
+        ],
+        "faixa": {
+          "serie": 0,
+          "inferior": [
+            [
+              0.79,
+              3.87
+            ],
+            [
+              2.44,
+              10.57
+            ],
+            [
+              4.72,
+              4.51
+            ],
+            [
+              7.93,
+              22.13
+            ],
+            [
+              12.81,
+              18.96
+            ],
+            [
+              18.36,
+              29.66
+            ],
+            [
+              38.05,
+              35.7
+            ],
+            [
+              74.2,
+              54.29
+            ]
+          ],
+          "superior": [
+            [
+              0.79,
+              20.59
+            ],
+            [
+              2.44,
+              62.97
+            ],
+            [
+              4.72,
+              43.75
+            ],
+            [
+              7.93,
+              84.32
+            ],
+            [
+              12.81,
+              80.04
+            ],
+            [
+              18.36,
+              115.29
+            ],
+            [
+              38.05,
+              147.3
+            ],
+            [
+              74.2,
+              193.55
+            ]
+          ]
+        }
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "O esforço cai 83 vezes da superfície ao fundo; o norte tem 2,5 vezes o do sul",
+          "en": "Effort drops 83-fold from surface to deep sea; the north has 2.5 times the south's",
+          "es": "El esfuerzo cae 83 veces de la superficie al fondo; el norte tiene 2,5 veces el del sur"
+        },
+        "leitura": {
+          "pt": "Registros com profundidade informada por mil km² de oceano: 292 de 0 a 200 m contra 3,5 abaixo de 4.000 m. A razão entre hemisférios é a da faixa de 0 a 200 m.",
+          "en": "Records with a stated depth per thousand km² of ocean: 292 at 0–200 m versus 3.5 below 4,000 m. The hemisphere ratio is for the 0–200 m band.",
+          "es": "Registros con profundidad informada por mil km² de océano: 292 de 0 a 200 m frente a 3,5 por debajo de 4.000 m. La razón entre hemisferios es la de la franja de 0 a 200 m."
+        },
+        "eixo_x": {
+          "pt": "Faixa de profundidade",
+          "en": "Depth band",
+          "es": "Franja de profundidad"
+        },
+        "eixo_y": {
+          "pt": "Registros por mil km² de oceano",
+          "en": "Records per thousand km² of ocean",
+          "es": "Registros por mil km² de océano"
+        },
+        "formato_x": "numero",
+        "formato_y": "numero",
+        "series": [
+          {
+            "nome": {
+              "pt": "Hemisfério norte",
+              "en": "Northern hemisphere",
+              "es": "Hemisferio norte"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "0 a 200 m",
+                441.48
+              ],
+              [
+                "200 a 1.000 m",
+                36.19
+              ],
+              [
+                "1.000 a 4.000 m",
+                10.44
+              ],
+              [
+                "mais de 4.000 m",
+                4.59
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "0 a 200 m",
+                "200 a 1.000 m",
+                "1.000 a 4.000 m",
+                "mais de 4.000 m"
+              ],
+              "en": [
+                "0–200 m",
+                "200–1,000 m",
+                "1,000–4,000 m",
+                "below 4,000 m"
+              ],
+              "es": [
+                "0 a 200 m",
+                "200 a 1.000 m",
+                "1.000 a 4.000 m",
+                "más de 4.000 m"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Hemisfério sul",
+              "en": "Southern hemisphere",
+              "es": "Hemisferio sur"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                "0 a 200 m",
+                179.57
+              ],
+              [
+                "200 a 1.000 m",
+                29.32
+              ],
+              [
+                "1.000 a 4.000 m",
+                6.23
+              ],
+              [
+                "mais de 4.000 m",
+                2.74
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "0 a 200 m",
+                "200 a 1.000 m",
+                "1.000 a 4.000 m",
+                "mais de 4.000 m"
+              ],
+              "en": [
+                "0–200 m",
+                "200–1,000 m",
+                "1,000–4,000 m",
+                "below 4,000 m"
+              ],
+              "es": [
+                "0 a 200 m",
+                "200 a 1.000 m",
+                "1.000 a 4.000 m",
+                "más de 4.000 m"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "tipo": "linhas",
+        "titulo": {
+          "pt": "Metade dos registros do OBIS vem de 1,2% da área do oceano",
+          "en": "Half of all OBIS records come from 1.2% of the ocean's area",
+          "es": "La mitad de los registros de OBIS viene del 1,2% del área del océano"
+        },
+        "leitura": {
+          "pt": "Curva de Lorenz: células de 10° x 10° da menos para a mais amostrada. A metade menos amostrada do oceano guarda 1,2% dos registros (Gini de 0,90); com esforço uniforme a curva seguiria a diagonal.",
+          "en": "Lorenz curve: 10° x 10° cells from least to most sampled. The less-sampled half of the ocean holds 1.2% of the records (Gini 0.90); uniform effort would follow the diagonal.",
+          "es": "Curva de Lorenz: celdas de 10° x 10° de la menos a la más muestreada. La mitad menos muestreada del océano guarda el 1,2% de los registros (Gini de 0,90); con esfuerzo uniforme la curva seguiría la diagonal."
+        },
+        "eixo_x": {
+          "pt": "Fração acumulada da área de oceano",
+          "en": "Cumulative share of ocean area",
+          "es": "Fracción acumulada del área oceánica"
+        },
+        "eixo_y": {
+          "pt": "Fração acumulada dos registros",
+          "en": "Cumulative share of records",
+          "es": "Fracción acumulada de los registros"
+        },
+        "formato_x": "percentual",
+        "formato_y": "percentual",
+        "series": [
+          {
+            "nome": {
+              "pt": "Todos os registros",
+              "en": "All records",
+              "es": "Todos los registros"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.02,
+                0.0
+              ],
+              [
+                0.04,
+                0.0001
+              ],
+              [
+                0.06,
+                0.0002
+              ],
+              [
+                0.08,
+                0.0003
+              ],
+              [
+                0.1,
+                0.0004
+              ],
+              [
+                0.12,
+                0.0005
+              ],
+              [
+                0.14,
+                0.0007
+              ],
+              [
+                0.16,
+                0.0009
+              ],
+              [
+                0.18,
+                0.0012
+              ],
+              [
+                0.2,
+                0.0014
+              ],
+              [
+                0.22,
+                0.0017
+              ],
+              [
+                0.24,
+                0.0021
+              ],
+              [
+                0.26,
+                0.0025
+              ],
+              [
+                0.28,
+                0.003
+              ],
+              [
+                0.3,
+                0.0035
+              ],
+              [
+                0.32,
+                0.004
+              ],
+              [
+                0.34,
+                0.0046
+              ],
+              [
+                0.36,
+                0.0053
+              ],
+              [
+                0.38,
+                0.006
+              ],
+              [
+                0.4,
+                0.0068
+              ],
+              [
+                0.42,
+                0.0077
+              ],
+              [
+                0.44,
+                0.0087
+              ],
+              [
+                0.46,
+                0.0098
+              ],
+              [
+                0.48,
+                0.011
+              ],
+              [
+                0.5,
+                0.0122
+              ],
+              [
+                0.52,
+                0.0136
+              ],
+              [
+                0.54,
+                0.0152
+              ],
+              [
+                0.56,
+                0.0169
+              ],
+              [
+                0.58,
+                0.0189
+              ],
+              [
+                0.6,
+                0.0211
+              ],
+              [
+                0.62,
+                0.0236
+              ],
+              [
+                0.64,
+                0.0263
+              ],
+              [
+                0.66,
+                0.0293
+              ],
+              [
+                0.68,
+                0.0328
+              ],
+              [
+                0.7,
+                0.0369
+              ],
+              [
+                0.72,
+                0.0412
+              ],
+              [
+                0.74,
+                0.0461
+              ],
+              [
+                0.76,
+                0.0515
+              ],
+              [
+                0.78,
+                0.0584
+              ],
+              [
+                0.8,
+                0.0664
+              ],
+              [
+                0.82,
+                0.0752
+              ],
+              [
+                0.84,
+                0.086
+              ],
+              [
+                0.86,
+                0.0995
+              ],
+              [
+                0.88,
+                0.1149
+              ],
+              [
+                0.9,
+                0.134
+              ],
+              [
+                0.91,
+                0.1448
+              ],
+              [
+                0.92,
+                0.1576
+              ],
+              [
+                0.93,
+                0.1725
+              ],
+              [
+                0.94,
+                0.1918
+              ],
+              [
+                0.95,
+                0.2191
+              ],
+              [
+                0.96,
+                0.2579
+              ],
+              [
+                0.97,
+                0.3126
+              ],
+              [
+                0.98,
+                0.4005
+              ],
+              [
+                0.99,
+                0.5446
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Registros abaixo de 4.000 m",
+              "en": "Records below 4,000 m",
+              "es": "Registros por debajo de 4.000 m"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.02,
+                0.0
+              ],
+              [
+                0.04,
+                0.0
+              ],
+              [
+                0.06,
+                0.0
+              ],
+              [
+                0.08,
+                0.0
+              ],
+              [
+                0.1,
+                0.0
+              ],
+              [
+                0.12,
+                0.0
+              ],
+              [
+                0.14,
+                0.0
+              ],
+              [
+                0.16,
+                0.0
+              ],
+              [
+                0.18,
+                0.0
+              ],
+              [
+                0.2,
+                0.0001
+              ],
+              [
+                0.22,
+                0.0001
+              ],
+              [
+                0.24,
+                0.0002
+              ],
+              [
+                0.26,
+                0.0002
+              ],
+              [
+                0.28,
+                0.0003
+              ],
+              [
+                0.3,
+                0.0004
+              ],
+              [
+                0.32,
+                0.0005
+              ],
+              [
+                0.34,
+                0.0006
+              ],
+              [
+                0.36,
+                0.0008
+              ],
+              [
+                0.38,
+                0.001
+              ],
+              [
+                0.4,
+                0.0012
+              ],
+              [
+                0.42,
+                0.0015
+              ],
+              [
+                0.44,
+                0.0018
+              ],
+              [
+                0.46,
+                0.0022
+              ],
+              [
+                0.48,
+                0.0026
+              ],
+              [
+                0.5,
+                0.003
+              ],
+              [
+                0.52,
+                0.0036
+              ],
+              [
+                0.54,
+                0.0041
+              ],
+              [
+                0.56,
+                0.0048
+              ],
+              [
+                0.58,
+                0.0055
+              ],
+              [
+                0.6,
+                0.0063
+              ],
+              [
+                0.62,
+                0.0072
+              ],
+              [
+                0.64,
+                0.0081
+              ],
+              [
+                0.66,
+                0.0092
+              ],
+              [
+                0.68,
+                0.0104
+              ],
+              [
+                0.7,
+                0.0118
+              ],
+              [
+                0.72,
+                0.0134
+              ],
+              [
+                0.74,
+                0.0153
+              ],
+              [
+                0.76,
+                0.0173
+              ],
+              [
+                0.78,
+                0.0199
+              ],
+              [
+                0.8,
+                0.0229
+              ],
+              [
+                0.82,
+                0.0265
+              ],
+              [
+                0.84,
+                0.0312
+              ],
+              [
+                0.86,
+                0.0363
+              ],
+              [
+                0.88,
+                0.0424
+              ],
+              [
+                0.9,
+                0.0515
+              ],
+              [
+                0.91,
+                0.0579
+              ],
+              [
+                0.92,
+                0.0708
+              ],
+              [
+                0.93,
+                0.0916
+              ],
+              [
+                0.94,
+                0.1259
+              ],
+              [
+                0.95,
+                0.1661
+              ],
+              [
+                0.96,
+                0.2106
+              ],
+              [
+                0.97,
+                0.2779
+              ],
+              [
+                0.98,
+                0.3856
+              ],
+              [
+                0.99,
+                0.5467
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          },
+          {
+            "nome": {
+              "pt": "Esforço uniforme",
+              "en": "Uniform effort",
+              "es": "Esfuerzo uniforme"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                0.0,
+                0.0
+              ],
+              [
+                0.02,
+                0.02
+              ],
+              [
+                0.04,
+                0.04
+              ],
+              [
+                0.06,
+                0.06
+              ],
+              [
+                0.08,
+                0.08
+              ],
+              [
+                0.1,
+                0.1
+              ],
+              [
+                0.12,
+                0.12
+              ],
+              [
+                0.14,
+                0.14
+              ],
+              [
+                0.16,
+                0.16
+              ],
+              [
+                0.18,
+                0.18
+              ],
+              [
+                0.2,
+                0.2
+              ],
+              [
+                0.22,
+                0.22
+              ],
+              [
+                0.24,
+                0.24
+              ],
+              [
+                0.26,
+                0.26
+              ],
+              [
+                0.28,
+                0.28
+              ],
+              [
+                0.3,
+                0.3
+              ],
+              [
+                0.32,
+                0.32
+              ],
+              [
+                0.34,
+                0.34
+              ],
+              [
+                0.36,
+                0.36
+              ],
+              [
+                0.38,
+                0.38
+              ],
+              [
+                0.4,
+                0.4
+              ],
+              [
+                0.42,
+                0.42
+              ],
+              [
+                0.44,
+                0.44
+              ],
+              [
+                0.46,
+                0.46
+              ],
+              [
+                0.48,
+                0.48
+              ],
+              [
+                0.5,
+                0.5
+              ],
+              [
+                0.52,
+                0.52
+              ],
+              [
+                0.54,
+                0.54
+              ],
+              [
+                0.56,
+                0.56
+              ],
+              [
+                0.58,
+                0.58
+              ],
+              [
+                0.6,
+                0.6
+              ],
+              [
+                0.62,
+                0.62
+              ],
+              [
+                0.64,
+                0.64
+              ],
+              [
+                0.66,
+                0.66
+              ],
+              [
+                0.68,
+                0.68
+              ],
+              [
+                0.7,
+                0.7
+              ],
+              [
+                0.72,
+                0.72
+              ],
+              [
+                0.74,
+                0.74
+              ],
+              [
+                0.76,
+                0.76
+              ],
+              [
+                0.78,
+                0.78
+              ],
+              [
+                0.8,
+                0.8
+              ],
+              [
+                0.82,
+                0.82
+              ],
+              [
+                0.84,
+                0.84
+              ],
+              [
+                0.86,
+                0.86
+              ],
+              [
+                0.88,
+                0.88
+              ],
+              [
+                0.9,
+                0.9
+              ],
+              [
+                0.91,
+                0.91
+              ],
+              [
+                0.92,
+                0.92
+              ],
+              [
+                0.93,
+                0.93
+              ],
+              [
+                0.94,
+                0.94
+              ],
+              [
+                0.95,
+                0.95
+              ],
+              [
+                0.96,
+                0.96
+              ],
+              [
+                0.97,
+                0.97
+              ],
+              [
+                0.98,
+                0.98
+              ],
+              [
+                0.99,
+                0.99
+              ],
+              [
+                1.0,
+                1.0
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "barras",
+        "titulo": {
+          "pt": "Com 100 registros o Chao1 vê 11% da riqueza real; com 100.000, 82%",
+          "en": "With 100 records Chao1 sees 11% of true richness; with 100,000, 82%",
+          "es": "Con 100 registros el Chao1 ve el 11% de la riqueza real; con 100.000, el 82%"
+        },
+        "leitura": {
+          "pt": "Comunidade simulada com 2.000 espécies, muitas delas raras. A riqueza total é sempre subestimada, mas a previsão de espécies novas nos próximos mil registros fica perto de 100% do valor verdadeiro a partir de mil registros.",
+          "en": "Simulated community of 2,000 species, many of them rare. Total richness is always underestimated, yet the forecast of new species in the next thousand records stays close to 100% of the true value from a thousand records on.",
+          "es": "Comunidad simulada con 2.000 especies, muchas de ellas raras. La riqueza total siempre se subestima, pero la previsión de especies nuevas en los próximos mil registros queda cerca del 100% del valor verdadero a partir de mil registros."
+        },
+        "eixo_x": {
+          "pt": "Registros na amostra",
+          "en": "Records in the sample",
+          "es": "Registros en la muestra"
+        },
+        "eixo_y": {
+          "pt": "Estimativa sobre o valor verdadeiro",
+          "en": "Estimate over the true value",
+          "es": "Estimación sobre el valor verdadero"
+        },
+        "formato_x": "numero",
+        "formato_y": "percentual",
+        "series": [
+          {
+            "nome": {
+              "pt": "Chao1 sobre a riqueza real",
+              "en": "Chao1 over true richness",
+              "es": "Chao1 sobre la riqueza real"
+            },
+            "papel": "principal",
+            "pontos": [
+              [
+                "100",
+                0.1115
+              ],
+              [
+                "300",
+                0.1602
+              ],
+              [
+                "1.000",
+                0.2605
+              ],
+              [
+                "3.000",
+                0.3865
+              ],
+              [
+                "10.000",
+                0.551
+              ],
+              [
+                "30.000",
+                0.6932
+              ],
+              [
+                "100.000",
+                0.8202
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ],
+              "en": [
+                "100",
+                "300",
+                "1,000",
+                "3,000",
+                "10,000",
+                "30,000",
+                "100,000"
+              ],
+              "es": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Espécies observadas sobre a riqueza real",
+              "en": "Observed species over true richness",
+              "es": "Especies observadas sobre la riqueza real"
+            },
+            "papel": "base",
+            "pontos": [
+              [
+                "100",
+                0.0311
+              ],
+              [
+                "300",
+                0.0654
+              ],
+              [
+                "1.000",
+                0.1375
+              ],
+              [
+                "3.000",
+                0.237
+              ],
+              [
+                "10.000",
+                0.3852
+              ],
+              [
+                "30.000",
+                0.5423
+              ],
+              [
+                "100.000",
+                0.713
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ],
+              "en": [
+                "100",
+                "300",
+                "1,000",
+                "3,000",
+                "10,000",
+                "30,000",
+                "100,000"
+              ],
+              "es": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ]
+            }
+          },
+          {
+            "nome": {
+              "pt": "Previsão de curto prazo sobre o valor verdadeiro",
+              "en": "Short-term forecast over the true value",
+              "es": "Previsión de corto plazo sobre el valor verdadero"
+            },
+            "papel": "alternativa",
+            "pontos": [
+              [
+                "100",
+                0.6141
+              ],
+              [
+                "300",
+                0.7855
+              ],
+              [
+                "1.000",
+                0.9563
+              ],
+              [
+                "3.000",
+                0.9989
+              ],
+              [
+                "10.000",
+                1.0124
+              ],
+              [
+                "30.000",
+                0.9934
+              ],
+              [
+                "100.000",
+                0.9971
+              ]
+            ],
+            "rotulos": {
+              "pt": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ],
+              "en": [
+                "100",
+                "300",
+                "1,000",
+                "3,000",
+                "10,000",
+                "30,000",
+                "100,000"
+              ],
+              "es": [
+                "100",
+                "300",
+                "1.000",
+                "3.000",
+                "10.000",
+                "30.000",
+                "100.000"
+              ]
+            }
+          }
+        ]
+      }
+    ]
   },
-  "tempo_de_execucao_s": 32.5
+  "tempo_de_execucao_s": 59.3
 }

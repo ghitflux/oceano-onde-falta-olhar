@@ -29,7 +29,7 @@ def _resultados(vantagem: float, vantagem_inf: float) -> dict:
 
 
 def test_bloco_do_site_segue_as_regras_do_portfolio():
-    b = site.bloco(_resultados(0.08, -0.1))
+    b = site.bloco_principal(_resultados(0.08, -0.1))
     for chave in ("numero_chave", "pergunta", "resultado", "detalhe", "dados"):
         assert set(b[chave]) == {"pt", "en", "es"}
     assert all(len(v) <= 12 for v in b["numero_chave"].values())
@@ -48,9 +48,9 @@ def test_bloco_do_site_segue_as_regras_do_portfolio():
 
 
 def test_a_frase_da_comparacao_segue_o_intervalo_e_nao_o_desejo():
-    venceu = site.bloco(_resultados(0.2, 0.05))["resultado"]["pt"]
-    empatou = site.bloco(_resultados(0.08, -0.1))["resultado"]["pt"]
-    perdeu = site.bloco(_resultados(-0.05, -0.2))["resultado"]["pt"]
+    venceu = site.bloco_principal(_resultados(0.2, 0.05))["resultado"]["pt"]
+    empatou = site.bloco_principal(_resultados(0.08, -0.1))["resultado"]["pt"]
+    perdeu = site.bloco_principal(_resultados(-0.05, -0.2))["resultado"]["pt"]
     assert "acima da regra simples" in venceu
     assert "cabe no acaso" in empatou
     assert "igual ou melhor" in perdeu
