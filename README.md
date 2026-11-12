@@ -327,7 +327,7 @@ Pré-requisito: [`uv`](https://docs.astral.sh/uv/getting-started/installation/).
 ```bash
 uv sync
 uv run python scripts/rodar_analise.py   # regera reports/ a partir do extrato em data/ (cerca de 35 s, sem rede)
-uv run pytest -q -p no:cacheprovider     # 48 testes, não dependem dos dados nem da rede
+uv run pytest -q -p no:cacheprovider     # 52 testes, não dependem dos dados nem da rede
 uv run python scripts/baixar_dados.py    # opcional: recoleta no OBIS (cerca de 2 h 40 min, uma requisição por vez)
 ```
 
@@ -345,7 +345,7 @@ bruto da coleta fica em `data/brutos/`, fora do git, e a coleta é retomável. O
 │   ├── analise.py            # cada tabela do estudo, a validação no tempo e a simulação
 │   └── graficos.py, estilo.py, site.py
 ├── scripts/                  # baixar_dados.py, rodar_analise.py
-├── tests/                    # 48 testes (pytest)
+├── tests/                    # 52 testes (pytest)
 └── reports/                  # resultados.json, figuras e os dois CSVs para reuso
 ```
 
