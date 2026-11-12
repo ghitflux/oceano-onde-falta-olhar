@@ -1,0 +1,4 @@
+# O extrato em data/ tem o hash conferido na carga: o git não deve mexer no fim de linha.
+data/*.csv -text
+data/*.json -text
+data/*.geojson -text
