@@ -1,0 +1,133 @@
+{
+  "coletado_em": "2026-11-12T07:24+00:00",
+  "coleta_iniciada_em": "2026-11-12T04:37+00:00",
+  "api": "https://api.obis.org/v3",
+  "relevo": "ETOPO1 (NOAA NGDC), amostrado a cada 0,5° pelo ERDDAP da NOAA CoastWatch (etopo180)",
+  "costa": "Natural Earth 1:110m coastline (domínio público)",
+  "grade": {
+    "passo_graus": 10,
+    "lat_min": -80,
+    "lat_max": 90
+  },
+  "faixas": {
+    "0-200": [
+      0,
+      200
+    ],
+    "200-1000": [
+      201,
+      1000
+    ],
+    "1000-4000": [
+      1001,
+      4000
+    ],
+    "4000+": [
+      4001,
+      12000
+    ]
+  },
+  "ano_de_corte": 2010,
+  "globais": {
+    "geral": {
+      "records": 259198986,
+      "species": 168316,
+      "taxa": 200771,
+      "datasets": 7305,
+      "specieslevel": 178434105,
+      "yearrange": [
+        1103,
+        2026
+      ]
+    },
+    "com_profundidade": {
+      "records": 119484613,
+      "species": 114022,
+      "taxa": 143254,
+      "datasets": 3481,
+      "specieslevel": 74034258,
+      "yearrange": [
+        1698,
+        2026
+      ]
+    },
+    "por_faixa": {
+      "0-200": {
+        "records": 105453122,
+        "species": 93255,
+        "taxa": 117237,
+        "datasets": 3132,
+        "specieslevel": 66083584,
+        "yearrange": [
+          1698,
+          2026
+        ]
+      },
+      "200-1000": {
+        "records": 10779591,
+        "species": 42635,
+        "taxa": 57519,
+        "datasets": 879,
+        "specieslevel": 7049935,
+        "yearrange": [
+          1831,
+          2025
+        ]
+      },
+      "1000-4000": {
+        "records": 2530710,
+        "species": 20674,
+        "taxa": 30723,
+        "datasets": 630,
+        "specieslevel": 715798,
+        "yearrange": [
+          1800,
+          2025
+        ]
+      },
+      "4000+": {
+        "records": 680588,
+        "species": 5387,
+        "taxa": 10092,
+        "datasets": 341,
+        "specieslevel": 176692,
+        "yearrange": [
+          1869,
+          2025
+        ]
+      }
+    },
+    "ate_corte": {
+      "records": 88940533,
+      "species": 129435,
+      "taxa": 159808,
+      "datasets": 3868,
+      "specieslevel": 71021309,
+      "yearrange": [
+        1103,
+        2010
+      ]
+    },
+    "depois_corte": {
+      "records": 159215379,
+      "species": 68354,
+      "taxa": 88414,
+      "datasets": 3948,
+      "specieslevel": 101130422,
+      "yearrange": [
+        2011,
+        2026
+      ]
+    }
+  },
+  "linhas": {
+    "celulas": 612,
+    "unidades": 1975,
+    "frequencias": 131719
+  },
+  "sha256_16": {
+    "celulas.csv": "2af650de41869d55",
+    "unidades.csv": "154d596ae190aae1",
+    "frequencias.csv": "007f294f9aa15e7a"
+  }
+}
